@@ -2,19 +2,19 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Layout from "@/components/organisms/Layout";
-import Home from "@/components/pages/Home";
-import Services from "@/components/pages/Services";
-import Fleet from "@/components/pages/Fleet";
-import Pricing from "@/components/pages/Pricing";
-import { RoutesPage } from "@/components/pages/Routes";
-import Contact from "@/components/pages/Contact";
 import Booking from "@/components/pages/Booking";
+import Pricing from "@/components/pages/Pricing";
 import Tracking from "@/components/pages/Tracking";
+import Fleet from "@/components/pages/Fleet";
+import Contact from "@/components/pages/Contact";
+import RoutesPage from "@/components/pages/Routes";
+import Services from "@/components/pages/Services";
+import Home from "@/components/pages/Home";
 import LocalTaxi from "@/components/pages/services/LocalTaxi";
-import OutstationCabs from "@/components/pages/services/OutstationCabs";
 import AirportTransfer from "@/components/pages/services/AirportTransfer";
-import CorporateServices from "@/components/pages/services/CorporateServices";
 import WeddingPackages from "@/components/pages/services/WeddingPackages";
+import CorporateServices from "@/components/pages/services/CorporateServices";
+import OutstationCabs from "@/components/pages/services/OutstationCabs";
 
 function App() {
   return (
