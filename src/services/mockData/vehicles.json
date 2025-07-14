@@ -1,0 +1,97 @@
+[
+  {
+    "Id": 1,
+    "category": "Hatchback",
+    "model": "Swift Dzire",
+    "seating": 4,
+    "pricePerKm": 9,
+    "features": [
+      "Air Conditioning",
+      "GPS Tracking",
+      "Music System",
+      "Mobile Charging"
+    ],
+    "imageUrl": "/images/hatchback.jpg",
+    "availability": true
+  },
+  {
+    "Id": 2,
+    "category": "Sedan",
+    "model": "Honda Amaze",
+    "seating": 4,
+    "pricePerKm": 12,
+    "features": [
+      "Air Conditioning",
+      "GPS Tracking",
+      "Premium Interior",
+      "Mobile Charging",
+      "Bluetooth Audio"
+    ],
+    "imageUrl": "/images/sedan.jpg",
+    "availability": true
+  },
+  {
+    "Id": 3,
+    "category": "SUV",
+    "model": "Toyota Innova",
+    "seating": 7,
+    "pricePerKm": 16,
+    "features": [
+      "Air Conditioning",
+      "GPS Tracking",
+      "Spacious Interior",
+      "Mobile Charging",
+      "Entertainment System"
+    ],
+    "imageUrl": "/images/suv.jpg",
+    "availability": true
+  },
+  {
+    "Id": 4,
+    "category": "Luxury",
+    "model": "Honda Accord",
+    "seating": 4,
+    "pricePerKm": 28,
+    "features": [
+      "Premium Air Conditioning",
+      "GPS Tracking",
+      "Leather Seats",
+      "Mobile Charging",
+      "Premium Audio System",
+      "Sunroof"
+    ],
+    "imageUrl": "/images/luxury.jpg",
+    "availability": true
+  },
+  {
+    "Id": 5,
+    "category": "Tempo Traveller",
+    "model": "Force Tempo Traveller",
+    "seating": 12,
+    "pricePerKm": 22,
+    "features": [
+      "Air Conditioning",
+      "GPS Tracking",
+      "Push Back Seats",
+      "Mobile Charging",
+      "Large Luggage Space"
+    ],
+    "imageUrl": "/images/tempo.jpg",
+    "availability": true
+  },
+  {
+    "Id": 6,
+    "category": "Hatchback",
+    "model": "Maruti Alto",
+    "seating": 4,
+    "pricePerKm": 8,
+    "features": [
+      "Air Conditioning",
+      "GPS Tracking",
+      "Fuel Efficient",
+      "Mobile Charging"
+    ],
+    "imageUrl": "/images/alto.jpg",
+    "availability": true
+  }
+]

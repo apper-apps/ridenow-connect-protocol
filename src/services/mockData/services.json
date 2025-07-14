@@ -1,0 +1,80 @@
+[
+  {
+    "Id": 1,
+    "name": "Local Taxi",
+    "description": "Comfortable hourly packages for all your local transportation needs within the city.",
+    "icon": "MapPin",
+    "basePrice": 10,
+    "features": [
+      "Flexible hourly packages",
+      "All city areas covered",
+      "Professional drivers",
+      "Fixed transparent pricing"
+    ]
+  },
+  {
+    "Id": 2,
+    "name": "Outstation Cabs",
+    "description": "Safe and reliable long-distance travel to your favorite destinations.",
+    "icon": "Car",
+    "basePrice": 12,
+    "features": [
+      "One-way and round trip",
+      "Multi-city tours available",
+      "Professional drivers",
+      "Well-maintained vehicles"
+    ]
+  },
+  {
+    "Id": 3,
+    "name": "Airport Transfer",
+    "description": "Hassle-free airport pickup and drop services with flight tracking.",
+    "icon": "Plane",
+    "basePrice": 15,
+    "features": [
+      "Flight tracking system",
+      "Meet and greet service",
+      "Luggage assistance",
+      "24/7 availability"
+    ]
+  },
+  {
+    "Id": 4,
+    "name": "Corporate Services",
+    "description": "Professional transportation solutions for businesses and organizations.",
+    "icon": "Briefcase",
+    "basePrice": 18,
+    "features": [
+      "Employee transportation",
+      "Executive travel",
+      "Event coordination",
+      "Monthly packages"
+    ]
+  },
+  {
+    "Id": 5,
+    "name": "Wedding Packages",
+    "description": "Special transportation services for weddings and celebrations.",
+    "icon": "Heart",
+    "basePrice": 25,
+    "features": [
+      "Bridal car decoration",
+      "Guest coordination",
+      "Photography support",
+      "Multi-day packages"
+    ]
+  },
+  {
+    "Id": 6,
+    "name": "Railway Station Transfer",
+    "description": "Convenient pickup and drop services from all major railway stations.",
+    "icon": "Train",
+    "basePrice": 8,
+    "features": [
+      "All stations covered",
+      "Train tracking",
+      "Luggage assistance",
+      "Fixed pricing"
+    ]
+  }
+]

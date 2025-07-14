@@ -1,0 +1,102 @@
+[
+  {
+    "Id": 1,
+    "origin": "City Center",
+    "destination": "Hill Station Resort",
+    "distance": 185,
+    "estimatedTime": "4 hours",
+    "baseFare": 1850,
+    "popular": true,
+    "type": "outstation"
+  },
+  {
+    "Id": 2,
+    "origin": "Airport",
+    "destination": "Business District",
+    "distance": 28,
+    "estimatedTime": "45 minutes",
+    "baseFare": 420,
+    "popular": true,
+    "type": "local"
+  },
+  {
+    "Id": 3,
+    "origin": "Railway Station",
+    "destination": "Tech Park",
+    "distance": 15,
+    "estimatedTime": "30 minutes",
+    "baseFare": 180,
+    "popular": true,
+    "type": "local"
+  },
+  {
+    "Id": 4,
+    "origin": "City Center",
+    "destination": "Pilgrimage Site",
+    "distance": 220,
+    "estimatedTime": "5 hours",
+    "baseFare": 2200,
+    "popular": true,
+    "type": "outstation"
+  },
+  {
+    "Id": 5,
+    "origin": "Hotel District",
+    "destination": "Shopping Mall",
+    "distance": 12,
+    "estimatedTime": "25 minutes",
+    "baseFare": 144,
+    "popular": false,
+    "type": "local"
+  },
+  {
+    "Id": 6,
+    "origin": "City Center",
+    "destination": "Beach Resort",
+    "distance": 165,
+    "estimatedTime": "3.5 hours",
+    "baseFare": 1650,
+    "popular": true,
+    "type": "outstation"
+  },
+  {
+    "Id": 7,
+    "origin": "Airport",
+    "destination": "Hotel Zone",
+    "distance": 35,
+    "estimatedTime": "1 hour",
+    "baseFare": 525,
+    "popular": false,
+    "type": "local"
+  },
+  {
+    "Id": 8,
+    "origin": "City Center",
+    "destination": "Adventure Park",
+    "distance": 95,
+    "estimatedTime": "2 hours",
+    "baseFare": 950,
+    "popular": false,
+    "type": "outstation"
+  },
+  {
+    "Id": 9,
+    "origin": "Railway Station",
+    "destination": "University Campus",
+    "distance": 18,
+    "estimatedTime": "35 minutes",
+    "baseFare": 216,
+    "popular": false,
+    "type": "local"
+  },
+  {
+    "Id": 10,
+    "origin": "City Center",
+    "destination": "Historical Fort",
+    "distance": 120,
+    "estimatedTime": "2.5 hours",
+    "baseFare": 1200,
+    "popular": true,
+    "type": "outstation"
+  }
+]
