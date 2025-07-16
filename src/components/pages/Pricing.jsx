@@ -3,7 +3,7 @@ import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
 
 const Pricing = () => {
-  const localTaxiRates = 
+const localTaxiRates = [
     { duration: "4 Hours / 40 KM", hatchback: "₹480", sedan: "₹600", suv: "₹800" },
     { duration: "8 Hours / 80 KM", hatchback: "₹960", sedan: "₹1200", suv: "₹1600" },
     { duration: "12 Hours / 120 KM", hatchback: "₹1440", sedan: "₹1800", suv: "₹2400" }
