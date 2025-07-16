@@ -12,7 +12,7 @@ const Fleet = () => {
   const [vehicles, setVehicles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  //const [selectedCategory, setSelectedCategory] = useState("all");
 
   const loadVehicles = async () => {
     try {
