@@ -31,7 +31,7 @@ const Routes = () => {
   }, []);
 
   const routeTypes = [
-    { value: "all", label: "All Routes" },
+    { value: "all", label: "All Routes },
     { value: "popular", label: "Popular Routes" },
     { value: "local", label: "Local Destinations" },
     { value: "outstation", label: "Outstation" }
