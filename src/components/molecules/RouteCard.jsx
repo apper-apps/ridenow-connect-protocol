@@ -7,15 +7,15 @@ const RouteCard = ({ route, onBook }) => {
     <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
       <div className="flex items-start justify-between mb-4">
         <div>
-          <h3 className="text-lg font-semibold text-gray-900">{route.origin} → {route.destination}</h3>
+<h3 className="text-lg font-semibold text-gray-900">{route.origin || route.origin_c} → {route.destination || route.destination_c}</h3>
           <div className="flex items-center space-x-4 mt-2 text-sm text-gray-600">
             <div className="flex items-center space-x-1">
               <ApperIcon name="MapPin" size={14} />
-              <span>{route.distance} km</span>
+<span>{route.distance || route.distance_c} km</span>
             </div>
             <div className="flex items-center space-x-1">
               <ApperIcon name="Clock" size={14} />
-              <span>{route.estimatedTime}</span>
+<span>{route.estimatedTime || route.estimated_time_c}</span>
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@ const RouteCard = ({ route, onBook }) => {
       
       <div className="flex items-center justify-between">
         <div className="text-primary font-semibold">
-          Starting at ₹{route.baseFare}
+Starting at ₹{route.baseFare || route.base_fare_c}
         </div>
         <Button size="sm" onClick={() => onBook(route)}>
           Book Now

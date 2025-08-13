@@ -74,7 +74,7 @@ const Services = () => {
           <ServiceCard
             key={service.Id}
             service={service}
-            link={`/services/${service.name.toLowerCase().replace(/\s+/g, '-')}`}
+link={`/services/${(service.name || service.Name).toLowerCase().replace(/\s+/g, '-')}`}
           />
         ))}
       </div>

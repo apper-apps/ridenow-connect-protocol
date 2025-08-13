@@ -41,7 +41,7 @@ const routeTypes = [
     ? routes 
     : selectedType === "popular"
     ? routes.filter(route => route.popular)
-    : routes.filter(route => route.type === selectedType);
+: routes.filter(route => (route.type || route.type_c) === selectedType);
 
   const handleBookRoute = (route) => {
     console.log("Booking route:", route);

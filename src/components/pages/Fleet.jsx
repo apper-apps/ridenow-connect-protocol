@@ -42,7 +42,7 @@ const [loading, setLoading] = useState(true);
 
   const filteredVehicles = selectedCategory === "all" 
     ? vehicles 
-    : vehicles.filter(vehicle => vehicle.category === selectedCategory);
+: vehicles.filter(vehicle => (vehicle.category || vehicle.category_c) === selectedCategory);
 
   const handleBookVehicle = (vehicle) => {
     console.log("Booking vehicle:", vehicle);

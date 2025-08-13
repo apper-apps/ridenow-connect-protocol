@@ -1,13 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { AuthContext } from "../../App";
 import ApperIcon from "@/components/ApperIcon";
 import NavDropdown from "@/components/molecules/NavDropdown";
 import Button from "@/components/atoms/Button";
-
+import Home from "@/components/pages/Home";
+import Contact from "@/components/pages/Contact";
+import Pricing from "@/components/pages/Pricing";
+import Routes from "@/components/pages/Routes";
+import Services from "@/components/pages/Services";
+import Fleet from "@/components/pages/Fleet";
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-
+  const { logout } = useContext(AuthContext);
+  const { user, isAuthenticated } = useSelector((state) => state.user);
   const serviceItems = [
     { name: "Local Taxi", path: "/services/local-taxi" },
     { name: "Outstation Cabs", path: "/services/outstation-cabs" },
@@ -65,7 +73,7 @@ const Header = () => {
             </Link>
           </nav>
 
-          {/* Header Actions */}
+{/* Header Actions */}
           <div className="flex items-center space-x-4">
             <Link to="/track" className="hidden md:block text-gray-700 hover:text-primary transition-colors duration-200">
               Track Ride
@@ -73,7 +81,19 @@ const Header = () => {
             <Link to="/book">
               <Button size="sm">Book Now</Button>
             </Link>
-            
+            {isAuthenticated && (
+              <div className="hidden md:flex items-center space-x-4">
+                <span className="text-sm text-gray-600">Welcome, {user?.firstName || 'User'}</span>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  onClick={logout}
+                >
+                  <ApperIcon name="LogOut" size={16} />
+                  Logout
+                </Button>
+              </div>
+            )}
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -140,9 +160,19 @@ const Header = () => {
                 to="/track" 
                 className="block py-2 text-gray-700 hover:text-primary transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Track Ride
+Track Ride
               </Link>
+              {isAuthenticated && (
+                <button
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    logout();
+                  }}
+                  className="block py-2 text-gray-700 hover:text-primary transition-colors duration-200 text-left"
+                >
+                  Logout
+                </button>
+              )}
             </nav>
           </div>
         )}

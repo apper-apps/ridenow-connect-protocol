@@ -107,7 +107,7 @@ const Booking = () => {
   const calculateFare = () => {
     if (bookingData.selectedVehicle) {
       const estimatedDistance = Math.floor(Math.random() * 20) + 5;
-      return bookingData.selectedVehicle.pricePerKm * estimatedDistance;
+return (bookingData.selectedVehicle.pricePerKm || bookingData.selectedVehicle.price_per_km_c) * estimatedDistance;
     }
     return 0;
   };
@@ -270,15 +270,15 @@ const Booking = () => {
                         <ApperIcon name="Car" size={32} className="text-gray-500" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-gray-900">{vehicle.category}</h3>
-                        <p className="text-sm text-gray-600">{vehicle.model}</p>
+<h3 className="text-lg font-semibold text-gray-900">{vehicle.category || vehicle.category_c}</h3>
+<p className="text-sm text-gray-600">{vehicle.model || vehicle.model_c}</p>
                         <div className="flex items-center space-x-4 mt-2">
                           <span className="text-sm text-gray-500">
                             <ApperIcon name="Users" size={14} className="inline mr-1" />
-                            {vehicle.seating} seats
+{vehicle.seating || vehicle.seating_c} seats
                           </span>
                           <span className="text-primary font-semibold">
-                            ₹{vehicle.pricePerKm}/km
+₹{vehicle.pricePerKm || vehicle.price_per_km_c}/km
                           </span>
                         </div>
                       </div>
@@ -297,7 +297,7 @@ const Booking = () => {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <p className="text-sm text-gray-600">Selected Vehicle</p>
-                      <p className="font-semibold text-gray-900">{bookingData.selectedVehicle.category}</p>
+<p className="font-semibold text-gray-900">{bookingData.selectedVehicle.category || bookingData.selectedVehicle.category_c}</p>
                     </div>
                     <div>
                       <p className="text-sm text-gray-600">Estimated Fare</p>
@@ -360,7 +360,7 @@ const Booking = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Vehicle:</span>
-                    <span className="font-medium">{bookingData.selectedVehicle?.category}</span>
+<span className="font-medium">{bookingData.selectedVehicle?.category || bookingData.selectedVehicle?.category_c}</span>
                   </div>
                   <div className="flex justify-between border-t pt-3">
                     <span className="text-lg font-semibold text-gray-900">Total Fare:</span>

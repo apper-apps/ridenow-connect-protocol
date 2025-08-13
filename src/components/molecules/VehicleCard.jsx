@@ -23,7 +23,7 @@ const VehicleCard = ({ vehicle, onBook }) => {
           </div>
           <div className="flex items-center space-x-2">
             <ApperIcon name="DollarSign" size={16} className="text-gray-500" />
-            <span className="text-sm text-gray-600">₹{vehicle.pricePerKm}/km</span>
+<span className="text-sm text-gray-600">₹{vehicle.pricePerKm || vehicle.price_per_km_c}/km</span>
           </div>
         </div>
 
