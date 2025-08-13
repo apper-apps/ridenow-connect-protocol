@@ -156,11 +156,12 @@ const Header = () => {
               >
                 Contact
               </Link>
-              <Link 
+<Link 
                 to="/track" 
                 className="block py-2 text-gray-700 hover:text-primary transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
-Track Ride
+              >
+                Track Ride
               </Link>
               {isAuthenticated && (
                 <button

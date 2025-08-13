@@ -236,10 +236,9 @@ export const servicesService = {
       if (error?.response?.data?.message) {
         console.error("Error deleting service:", error?.response?.data?.message);
       } else {
-        console.error("Error deleting service:", error.message);
+console.error("Error deleting service:", error.message);
       }
       throw error;
-throw error;
     }
   }
 };
